@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Venda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">MyApp</div>
+    <nav>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Produtos</li>
+        <li>Relatórios</li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <header>
+      <h1>Dashboard</h1>
+      <div class="profile">Olá, Usuário</div>
+    </header>
+    <section class="stats-cards">
+      <div class="card">Total Vendas<br><span>120</span></div>
+      <div class="card">Faturamento<br><span>R$ 5.600</span></div>
+      <div class="card">Clientes<br><span>80</span></div>
+    </section>
+    <section class="table-section">
+      <h2>Últimas Vendas</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Produto</th><th>Valor</th><th>Status</th></tr></thead>
+        <tbody id="sales-table"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
